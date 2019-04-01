@@ -3,7 +3,8 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 
 Vue.use(Router);
-
+const NumberGrowWrap = resolve =>
+  require(['@/page/demo/NumberGrowWrap/NumberGrowWrap'], resolve);
 export default new Router({
   mode: "history",
   base: process.env.BASE_URL,
@@ -21,6 +22,18 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/About.vue")
+    },
+    {
+      path: "/demo",
+      name: "demo",
+      component: () =>
+      import(/* webpackChunkName: "demo" */ "./page/demo/index.vue"),
+     children:[
+       {
+         path: "/numbergrowwrap",
+         component:NumberGrowWrap
+       }
+     ]
     }
   ]
 });
