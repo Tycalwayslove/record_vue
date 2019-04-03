@@ -60,5 +60,13 @@
      -->
 ```
 
-- 其他 - 推荐使用 vscode 作为开发工具，共用 一套规范，并且使用 prettier + eslint 自动格式化代码
+- 目录结构
+
+* 其他 - 推荐使用 vscode 作为开发工具，共用 一套规范，并且使用 prettier + eslint 自动格式化代码
   - > vscode + eslint + Prettier 自动格式化代码（.eslintrc.js 配置） [参考配置文章](https://monkeywie.github.io/2018/08/03/vscode-vue-eslint-prettier/)
+
+###### 2.vscode 效率提升（插件配置，自定义代码片段等等）
+
+> 详见 自定义代码片段.md
+
+###### 3.初始化样式
