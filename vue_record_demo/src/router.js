@@ -1,17 +1,17 @@
-import Vue from "vue";
-import Router from "vue-router";
-import Index from "./views/index.vue";
+import Vue from 'vue';
+import Router from 'vue-router';
+import Index from './views/index.vue';
 
-Vue.use(Router);
+Vue.use(Router)
 const NumberGrowWrap = resolve =>
-  require(["@/page/demo/NumberGrowWrap/NumberGrowWrap"], resolve);
+  require(['@/page/demo/NumberGrowWrap/NumberGrowWrap'], resolve)
 export default new Router({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
-      path: "/",
-      name: "index",
+      path: '/',
+      name: 'index',
       component: Index
     }
     // {
@@ -24,4 +24,4 @@ export default new Router({
     //     import(/* webpackChunkName: "about" */ "./views/About.vue")
     // },
   ]
-});
+})
