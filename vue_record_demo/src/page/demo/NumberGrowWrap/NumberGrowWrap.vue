@@ -1,6 +1,9 @@
 <template>
   <div class="number-grow-wrap">
-    <span :data-value="showValue" ref="numberGrow" class="number-grow" :data-time="showTime"></span>
+    <span :data-value="showValue"
+          ref="numberGrow"
+          class="number-grow"
+          :data-time="showTime"></span>
   </div>
 </template>
 <script>
@@ -31,8 +34,7 @@ export default {
       let _this = this;
       console.log(_this.time);
       let nowValue = _this.showValue;
-      let step = parseInt((nowValue * 10) / (_this.time * 1000));
-      // let step = parseInt((_this.value * 10) / (_this.time * 1000));
+      let step = parseInt((_this.value * 10) / (_this.time * 1000));
       let current = 0;
       let start = 0;
       let t = setInterval(() => {
