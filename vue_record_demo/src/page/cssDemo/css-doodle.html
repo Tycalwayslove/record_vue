@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>css 涂鸦</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.2.3/css-doodle.min.js"></script>
+  </head>
+  <style>
+  body{
+    width:100vw;
+    height:100vh;
+  }
+  </style>
+  <body>
+    <css-doodle>
+      :doodle { @grid: 20 / 100vmax; background: #5fa6bf; } @even { :after {
+      color: #fff3e6; content: '\@hex(@rand(9500, 9700))'; font-size: 5vmax;
+      transform: scale(@rand(.2, 1.5)); } } @odd { :after { color: #ffb37f;
+      content: '\@hex(@rand(9500, 9700))'; font-size: 5vmax; transform:
+      scale(@rand(.2, 1.5)); } } </css-doodle>
+</html>
