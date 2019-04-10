@@ -6,4 +6,4 @@
 
 - web component
 - gird
-- css-doodle （css 涂鸦）<polyfilling>（用来兼容除最新 Chrome 和 Safari 其他浏览器）
+- css-doodle （css 涂鸦）<polyfilling>（用来兼容除最新 Chrome 和 Safari 之外的其他浏览器）
