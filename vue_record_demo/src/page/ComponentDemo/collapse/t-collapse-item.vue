@@ -22,7 +22,7 @@
 </template>
 <script>
 import Emitter from "@/assets/js/emitter";
-import TCollapseTransition from "./collapse-transition";
+import TCollapseTransition from "@/assets/js/collapse-transition";
 export default {
   name: "TCollapseItem",
   componentName: "TCollapseItem",
